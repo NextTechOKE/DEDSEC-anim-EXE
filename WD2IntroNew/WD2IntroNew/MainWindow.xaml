@@ -34,8 +34,8 @@
 
             <Image x:Name="WindowControls" Source="/Window Controls.png" Margin="-8,0,-8,0" Panel.ZIndex="6" Grid.RowSpan="2" d:IsLocked="True"/>
 
-            <Rectangle HorizontalAlignment="Center" Height="149" VerticalAlignment="Top" Width="344" Fill="#FFE3E6E4" Margin="0,32,0,0"/>
-            <Image x:Name="Guide" Source="/Untitled-2.png" Margin="0,-1,0,-1" Grid.RowSpan="2" Panel.ZIndex="20" Opacity="0"/>
+            <Rectangle HorizontalAlignment="Center" Height="149" VerticalAlignment="Top" Width="344" Fill="#FFCACACA" Margin="0,32,0,0"/>
+            <Image x:Name="Guide" Source="/Untitled-2.png" Margin="0,-1,0,-1" Grid.RowSpan="2" Panel.ZIndex="20" Opacity="0" d:IsLocked="True"/>
             <Image x:Name="ctOS_Logo" HorizontalAlignment="Left" Height="108" Margin="234,23,0,0" VerticalAlignment="Top" Width="106" Source="/Ctosv3.png" Grid.Row="1"/>
             <TextBox x:Name="PoweredBy" TextWrapping="Wrap" Text="POWERED BY" Margin="248,6,0,55" Background="{x:Null}" BorderBrush="{x:Null}" Grid.Row="1" FontFamily="Helvetica-Neue-65-Medium" FontWeight="Bold" FontSize="13" SelectionTextBrush="{x:Null}" SelectionBrush="{x:Null}" />
             <TextBox x:Name="Connect_to_BLUME_Servers___" TextWrapping="Wrap" Text="Connect to BLUME Servers..." Margin="12,8,144,158" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Helvetica-Neue-65-Medium" FontSize="13" Foreground="#FF525252" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}"/>
@@ -49,7 +49,9 @@
             <Rectangle x:Name="Host_Box" HorizontalAlignment="Left" Height="31" Margin="69,38,0,0" VerticalAlignment="Top" Width="271" Fill="White"/>
             <Rectangle x:Name="User_Box" HorizontalAlignment="Left" Height="31" Margin="69,72,0,0" VerticalAlignment="Top" Width="271" Fill="White"/>
             <Rectangle x:Name="PassBox" HorizontalAlignment="Left" Height="32" Margin="69,106,0,0" VerticalAlignment="Top" Width="271" Fill="White"/>
-            <TextBlock x:Name="Host_Text" Style="{StaticResource CustomFont2}"  HorizontalAlignment="Left" Margin="79,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21"  Text="fdfb:4503:4d58::/48" RenderTransformOrigin="1.028,0.417" FontSize="14" Width="141"/>
+            <TextBlock x:Name="Host_Text" Style="{StaticResource CustomFont2}"  HorizontalAlignment="Left" Margin="79,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21" RenderTransformOrigin="1.028,0.417" FontSize="14" Width="142" Height="16"/>
+            <TextBlock x:Name="User_Text" Style="{StaticResource CustomFont2}"  HorizontalAlignment="Left" Margin="79,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21" RenderTransformOrigin="1.028,0.417" FontSize="14" Width="141"/>
+            <TextBlock x:Name="Pass_Text" Style="{StaticResource CustomFont2}"  HorizontalAlignment="Left" Margin="79,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21" RenderTransformOrigin="1.028,0.417" FontSize="14" Width="141"/>
 
 
         </Grid>
