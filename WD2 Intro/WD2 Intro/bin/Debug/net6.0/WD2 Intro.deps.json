@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WD2 Intro/1.0.0": {
+        "runtime": {
+          "WD2 Intro.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WD2 Intro/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

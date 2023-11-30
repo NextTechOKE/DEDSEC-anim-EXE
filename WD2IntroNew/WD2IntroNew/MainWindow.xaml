@@ -1,0 +1,59 @@
+﻿<Window x:Class="WD2IntroNew.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WD2IntroNew"
+        mc:Ignorable="d"
+        Title="Connect to BLUME Servers..."
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Height="256" Width="350">
+
+
+
+
+
+
+
+    <Border Background="White" CornerRadius="5">
+
+
+
+
+
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="WindowControls" Source="/Window Controls.png" Margin="-8,0,-8,0" Panel.ZIndex="6" Grid.RowSpan="2" d:IsLocked="True"/>
+
+            <Rectangle HorizontalAlignment="Center" Height="149" VerticalAlignment="Top" Width="344" Fill="#FFE3E6E4" Margin="0,32,0,0"/>
+            <Image x:Name="Guide" Source="/Untitled-2.png" Margin="0,-1,0,-1" Grid.RowSpan="2" Panel.ZIndex="20" Opacity="0"/>
+            <Image x:Name="ctOS_Logo" HorizontalAlignment="Left" Height="108" Margin="234,23,0,0" VerticalAlignment="Top" Width="106" Source="/Ctosv3.png" Grid.Row="1"/>
+            <TextBox x:Name="PoweredBy" TextWrapping="Wrap" Text="POWERED BY" Margin="248,6,0,55" Background="{x:Null}" BorderBrush="{x:Null}" Grid.Row="1" FontFamily="Helvetica-Neue-65-Medium" FontWeight="Bold" FontSize="13" SelectionTextBrush="{x:Null}" SelectionBrush="{x:Null}" />
+            <TextBox x:Name="Connect_to_BLUME_Servers___" TextWrapping="Wrap" Text="Connect to BLUME Servers..." Margin="12,8,144,158" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Helvetica-Neue-65-Medium" FontSize="13" Foreground="#FF525252" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}"/>
+            <Rectangle x:Name="Connect_button" HorizontalAlignment="Left" Height="32" Margin="72,143,0,0" VerticalAlignment="Top" Width="99" Fill="White"/>
+            <Rectangle x:Name="Help_button" HorizontalAlignment="Left" Height="32" Margin="181,143,0,0" VerticalAlignment="Top" Width="99" Fill="White"/>
+            <TextBlock x:Name="Pass" HorizontalAlignment="Left" Margin="15,111,0,0" TextWrapping="Wrap" Text="Pass" VerticalAlignment="Top" FontFamily="Helvetica Neue" Foreground="#FF5F5F5F" FontSize="13.5"/>
+            <TextBlock x:Name="User" HorizontalAlignment="Left" Margin="16,78,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" FontFamily="Helvetica Neue" Foreground="#FF5F5F5F" FontSize="13.5"/>
+            <TextBlock x:Name="Host" HorizontalAlignment="Left" Margin="16,45,0,0" TextWrapping="Wrap" Text="Host" VerticalAlignment="Top" FontFamily="Helvetica Neue" Foreground="#FF5F5F5F" FontSize="13.5" RenderTransformOrigin="0.75,-0.41"/>
+            <TextBlock x:Name="Connect_Text" HorizontalAlignment="Left" Margin="91,149,0,0" TextWrapping="Wrap" Text="Connect" VerticalAlignment="Top" FontFamily="Helvetica Neue" Foreground="#FF5F5F5F" FontSize="14" RenderTransformOrigin="0.75,-0.41"/>
+            <TextBlock x:Name="Help_Text" HorizontalAlignment="Left" Margin="215,150,0,0" TextWrapping="Wrap" Text="Help" VerticalAlignment="Top" FontFamily="Helvetica Neue" Foreground="#FF5F5F5F" FontSize="14" RenderTransformOrigin="0.75,-0.41"/>
+            <Rectangle x:Name="Host_Box" HorizontalAlignment="Left" Height="31" Margin="69,38,0,0" VerticalAlignment="Top" Width="271" Fill="White"/>
+            <Rectangle x:Name="User_Box" HorizontalAlignment="Left" Height="31" Margin="69,72,0,0" VerticalAlignment="Top" Width="271" Fill="White"/>
+            <Rectangle x:Name="PassBox" HorizontalAlignment="Left" Height="32" Margin="69,106,0,0" VerticalAlignment="Top" Width="271" Fill="White"/>
+            <TextBlock x:Name="Host_Text" Style="{StaticResource CustomFont2}"  HorizontalAlignment="Left" Margin="79,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21"  Text="fdfb:4503:4d58::/48" RenderTransformOrigin="1.028,0.417" FontSize="14" Width="141"/>
+
+
+        </Grid>
+
+    </Border>
+
+</Window>
