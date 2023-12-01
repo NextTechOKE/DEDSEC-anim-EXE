@@ -3,6 +3,8 @@ using System.Windows;
 using System.Windows.Input;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.Windows.Media;
+
 
 namespace WD2IntroNew
 {
@@ -41,7 +43,7 @@ namespace WD2IntroNew
             {
                 inputEnabled = false;
                 Debug.WriteLine("Disable input");
-                YourFunction(); // Call your custom function here
+               FinishedTyping(); // Call your custom function here
             }
         }
 
@@ -63,11 +65,26 @@ namespace WD2IntroNew
         }
 
 
-        private void YourFunction()
+        private async void FinishedTyping()
         {
             // Implement your custom function logic here
-            MessageBox.Show("All strings typed. Calling custom function.");
+            await Task.Delay(216);
+            Connect_Text.Foreground = Brushes.White;
+            Connect_button.Fill = Brushes.DarkGray;
+
+            // Asynchronous delay without freezing the UI
+            await Task.Delay(166);
+            ChangeButtonColor();
+            await Task.Delay(100);
+            MainBorder.Visibility = Visibility.Hidden;
         }
+
+        public void ChangeButtonColor()
+        {
+            Connect_Text.Foreground = Brushes.DarkSlateGray;
+            Connect_button.Fill = Brushes.White;
+        }
+
 
         public void Init_Cont()
         {
