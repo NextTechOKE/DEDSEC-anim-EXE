@@ -18,7 +18,6 @@ namespace WD2IntroNew
         {
             InitializeComponent();
             Init_Cont();
-            DisplayCommand();
             PreviewKeyDown += MainWindow_PreviewKeyDown;
         }
 
@@ -31,14 +30,14 @@ namespace WD2IntroNew
             // Mark the event as handled to prevent additional processing
             e.Handled = true;
 
-            // Handle the key press event and update the TextBox text
-            currentPosition = (currentPosition + 1) % (HostText.Length + UserText.Length + PassText.Length);
-
             // Display the current portion of the command string
             DisplayCommand();
 
+            // Handle the key press event and update the TextBox text
+            currentPosition = (currentPosition + 1) % (HostText.Length + UserText.Length + PassText.Length);
+
             // If currentPosition reaches the end of the strings, disable input
-            if (currentPosition == HostText.Length + UserText.Length + PassText.Length)
+            if (currentPosition >= HostText.Length + UserText.Length + PassText.Length - 1)
             {
                 inputEnabled = false;
                 Debug.WriteLine("Disable input");
