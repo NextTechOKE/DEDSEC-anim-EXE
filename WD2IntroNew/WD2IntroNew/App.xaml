@@ -10,8 +10,7 @@
             </Setter>
         </Style>
         <Style x:Key="CustomFont2">
-            <Setter Property="TextElement.FontFamily"
-             Value="/Fonts/#Terminal">
+            <Setter Property="TextElement.FontFamily" Value="/Fonts/#Terminal">
             </Setter>
         </Style>
     </Application.Resources>

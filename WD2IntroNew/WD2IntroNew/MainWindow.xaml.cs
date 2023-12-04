@@ -21,6 +21,8 @@ namespace WD2IntroNew
             InitializeComponent();
             Init_Cont();
             PreviewKeyDown += MainWindow_PreviewKeyDown;
+
+
         }
 
         private async void MainWindow_PreviewKeyDown(object sender, KeyEventArgs e)
