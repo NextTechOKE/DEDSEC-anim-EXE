@@ -10,9 +10,10 @@ namespace WD2IntroNew
 {
     public partial class MainWindow : Window
     {
-        private string HostText = "fdfb:4503:4d58::/48";
-        private string UserText = "mrcs_pyhooma";
-        private string PassText = "*********";
+        private string HostText = "fdfb\"4503\"4d58\" \"'48";
+        //private string HostTextOld = "fdfb:4503:4d58::/48";
+        private string UserText = "mrcs!pyhooma";
+        private string PassText = ",,,,,,,,,";
         private int currentPosition = 0;
         private bool inputEnabled = true;
 
@@ -62,7 +63,7 @@ namespace WD2IntroNew
             }
             else if (currentPosition < HostText.Length + UserText.Length + PassText.Length)
             {
-                Pass_Text.Text = new string('*', currentPosition - HostText.Length - UserText.Length + 1); // Mask the password
+                Pass_Text.Text = new string(',', currentPosition - HostText.Length - UserText.Length + 1); // Mask the password
             }
         }
 

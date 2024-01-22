@@ -36,19 +36,19 @@
             <Rectangle x:Name="Host_Box" HorizontalAlignment="Left" Height="31" Margin="69,38,0,0" VerticalAlignment="Top" Width="271" Fill="White"/>
             <Rectangle x:Name="User_Box" HorizontalAlignment="Left" Height="31" Margin="69,72,0,0" VerticalAlignment="Top" Width="271" Fill="White"/>
             <Rectangle x:Name="PassBox" HorizontalAlignment="Left" Height="32" Margin="69,106,0,0" VerticalAlignment="Top" Width="271" Fill="White"/>
-            <TextBlock x:Name="Host_Text"  HorizontalAlignment="Left" Margin="76,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21" RenderTransformOrigin="1.028,0.417" FontSize="14" Width="186" Height="16" FontFamily="Terminal" Text="fdfb:4503:4d58::/48">
+            <TextBlock x:Name="Host_Text"  HorizontalAlignment="Left" Margin="76,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21" RenderTransformOrigin="1.028,0.417" FontSize="34" Width="228" Height="50" FontFamily="Myfont2">
                 <TextBlock.RenderTransform>
                     <ScaleTransform ScaleX="1.0" ScaleY="1" />
                 </TextBlock.RenderTransform>
             </TextBlock>
 
-            <TextBlock x:Name="User_Text" HorizontalAlignment="Left" Margin="76,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21" RenderTransformOrigin="1.028,0.417" FontSize="14" Width="178" FontFamily="Terminal">
+            <TextBlock x:Name="User_Text" HorizontalAlignment="Left" Margin="72,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21" RenderTransformOrigin="1.028,0.417" FontSize="34" Width="268" FontFamily="Myfont2">
                 <TextBlock.RenderTransform>
                     <ScaleTransform ScaleX="1.0" ScaleY="1" />
                 </TextBlock.RenderTransform>
             </TextBlock>
 
-            <TextBlock x:Name="Pass_Text"  HorizontalAlignment="Left" Margin="76,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21" RenderTransformOrigin="1.028,0.417" FontSize="14" Width="169" FontFamily="Terminal">
+            <TextBlock x:Name="Pass_Text"  HorizontalAlignment="Left" Margin="72,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Panel.ZIndex="21" RenderTransformOrigin="1.028,0.417" FontSize="34" Width="268" FontFamily="Myfont2">
                 <TextBlock.RenderTransform>
                     <ScaleTransform ScaleX="1.0" ScaleY="1" />
                 </TextBlock.RenderTransform>
